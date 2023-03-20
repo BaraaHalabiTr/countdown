@@ -19,8 +19,8 @@ const countdown = () => {
     $('#hour').html(`${textHour}<strong>Hours</strong>`);
     $('#minute').html(`${textMinute}<strong>Minutes</strong>`);
     $('#second').html(`${textSecond}<strong>Seconds</strong>`);
-    textDay = 99;
-    if(textDay == 99 && textSecond == 0) {
+    
+    if(textDay == 100 && textSecond == 0) {
         clearInterval(timer);
         animateWord(s1).then(() => {
             document.body.addEventListener('click', () => {
