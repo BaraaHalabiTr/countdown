@@ -39,6 +39,23 @@ html, body {
     font-size: 32px;
 }
 
+#fancy {
+    padding: 1rem;
+    font-size: 2rem !important;
+    font-weight: bold;
+    color: white;
+}
+
+#fancy span {
+    opacity: 0;
+    padding: 0;
+}
+
+#fancy span.fade {
+    opacity: 100;
+    transition: 0.4s ease-in;
+}
+
 @media only screen and (max-width: 770px) {
     .container span {
         padding: 0 10px;
